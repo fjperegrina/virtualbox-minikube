@@ -18,3 +18,13 @@ sudo apt-get update
 
 sudo apt-get install docker-ce
 
+Modificar indicadores
+sudo sysctl net.ipv4.conf.all.forwarding=1
+sudo iptables -P FORWARD ACCEPT
+
+Añadido fichero /etc/docker/daemon.json
+{
+ "bip": "172.26.0.1/16"
+}
+define la red por defecto .
+
