@@ -5,6 +5,7 @@ El cluster se levanta:
 
 sudo minikube --vm-driver=none start
 
+
 Se detiene:
 
 sudo minikube stop
